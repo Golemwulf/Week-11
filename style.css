@@ -1,0 +1,8 @@
+/* This allows the full grid to show in the card. Without it, the grid will disappear */
+.square {
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  text-align: center;
+  cursor: pointer;
+}
