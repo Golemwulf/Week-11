@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
   </head>
-  <body class="bg-secondary">
+  <body class="bg-secondary  d-flex
+  align-items-center  
+    justify-content-center  
+    min-vh-100">
   
   <div class="container">
     <div class="card bg-light">
@@ -19,13 +22,17 @@
     <!-- 9 panel grid that will house the main buttons -->
       <div class="card bg-light">
         <div class="card-body">
-          <div id="board" class="row mt-4">
+          <div id="board" class="row justify-content-center">
             <div class="col-4 square border border-dark bg-info" data-index="0"></div>
             <div class="col-4 square border border-dark bg-info" data-index="1"></div>
             <div class="col-4 square border border-dark bg-info" data-index="2"></div>
+          </div>
+          <div id="board" class="row  justify-content-center">
             <div class="col-4 square border border-dark bg-info" data-index="3"></div>
             <div class="col-4 square border border-dark bg-info" data-index="4"></div>
             <div class="col-4 square border border-dark bg-info" data-index="5"></div>
+          </div>
+          <div id="board" class="row  justify-content-center">
             <div class="col-4 square border border-dark bg-info" data-index="6"></div>
             <div class="col-4 square border border-dark bg-info" data-index="7"></div>
             <div class="col-4 square border border-dark bg-info" data-index="8"></div>
@@ -35,13 +42,16 @@
 <br>
     <div class="card">
       <div class="card-body">
-        <div id="status" class="text-center mt-4 text-color-light fs-1"></div>
+        <div id="status" class="text-center mt-4 text-color-light fs-3"></div>
       </div>
     </div>
     <br>
     <div class="card">
       <div class="card-body">
-        <button id="resetBtn" class="btn btn-info">Reset</button>
+        <div class="d-grid gap-2">
+          <button id="resetBtn" class="btn btn-info fs-3">Reset</button>
+
+        </div>
       </div>
     </div>
 </div>
